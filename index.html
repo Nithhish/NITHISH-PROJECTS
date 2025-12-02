@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2d3748;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .products {
+            max-width: 1000px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 1rem;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+        .product-card img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .product-name {
+            font-size: 1.1rem;
+            margin: 0.8rem 0 0.2rem;
+        }
+        .product-price {
+            color: #38a169;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .buy-btn {
+            background: #3182ce;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            margin-top: 0.4rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .buy-btn:hover {
+            background: #2b6cb0;
+        }
+        @media (max-width: 500px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+            .product-card img {
+                width: 100%;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple E-Commerce Store</h1>
+        <p>Shop our latest products!</p>
+    </header>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1513709630908-c85e7ab9c9bb?auto=format&fit=crop&w=400&q=80" alt="Classic Sneakers">
+            <div class="product-name">Classic Sneakers</div>
+            <div class="product-price">$49.99</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999089f49?auto=format&fit=crop&w=400&q=80" alt="Elegant Watch">
+            <div class="product-name">Elegant Watch</div>
+            <div class="product-price">$89.99</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=400&q=80" alt="Blue Headphones">
+            <div class="product-name">Blue Headphones</div>
+            <div class="product-price">$32.50</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=400&q=80" alt="Leather Wallet">
+            <div class="product-name">Leather Wallet</div>
+            <div class="product-price">$25.00</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
